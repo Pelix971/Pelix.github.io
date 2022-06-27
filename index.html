@@ -1,0 +1,79 @@
+<html lang="zh-CN">
+    <head>
+		<title>PelixAPI :P</title>
+    	<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<meta name="KEYWords" content="Pelix的主页兼职Bili解析">
+		<meta name="Description" content="Pelix的主页兼职Bili解析">
+		<meta name="Author" content="PelixAPI">
+		<meta name="Robots" content="all">
+		<link rel="icon" type="image/ico" href="img/QQ图片20211005140406.png">
+        <link rel="stylesheet" href="CSS/style.css">
+        <link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css">
+		<link rel="stylesheet" href="Live2d/CSS/live2d.css" />
+	</head>
+	<body>
+		<div id="web_bg" style="background-image: url(./img/Pixiv/94219701_p0_master1200.jpg);"></div>
+		<div id="landlord">
+			<div class="message" style="opacity:0"></div>
+			<canvas id="live2d" width="280" height="250" class="live2d"></canvas>
+			<div class="hide-button">隐藏</div>
+		</div>
+		<div class="container">
+			<div class="hander">
+				<nav id="nav-menu">
+					<a href="#" data-rel="home-me-section" class="active">首页</a>
+					<a href="#" data-rel="about-exp-section">关于</a>
+					<a href="quit" data-rel="about-exp-section">退出</a>
+					<!--<a href="#" data-rel="course-exp-section">历程</a>-->
+				</nav>
+			</div>
+			<div class="content">
+				<section class="home-me-section active-section">
+					<div class="main">
+						<img src="./img/Pixiv/91953835_p1_master1200.jpg" class="bgo"  alt=""/>
+						<img src="./img/QQ图片20211005140406.png" class="ato" onclick="alert('别戳老子')"  alt=""/>
+						<div class="name" onclick="this.innerHTML=(this.innerHTML==='Pelix'?'芜湖':'Pelix');">Pelix</div>
+						<div class="motto" onclick="this.innerHTML=(this.innerHTML==='戳我'?'再戳一次':'戳我');">戳我</div>
+						<div class="navo">
+							<ul>
+								<li><a href="tencent://message/?uin=1669713805&Site=&Menu=yes" target="_blank"><i class="fa fa-qq"></i></a></li>
+								<li><a href="https://u.wechat.com/EGn2lRVXys0xGG9sHDeezI4" target="_blank"><i class="fa fa-weixin"></i></a></li>
+								<li><a href="https://steamcommunity.com/id/1669713805/" target="_blank"><i class="fa fa-steam"></i></a></li>
+								<li><a href="https://space.bilibili.com/66874500" target="_blank"><i class="fa fa-tv"></i></a></li>
+								<li><a href="mailto:1669713805@qq.com=这是邮件的主题&body=这是邮件的内容" target="_blank"><i class="fa fa-envelope"></i></a></li>
+								<li><a href="https://music.163.com/#/user/home?id=297230132" target="_blank"><i class="fa fa-music"></i></a></li>
+							</ul>
+						</div>
+					</div>
+				</section>
+				<section class="about-exp-section">
+					<div class="main">
+						<img src="./img/Pixiv/91953835_p1_master1200.jpg" class="bgt"  alt=""/>
+						<img src="./img/QQ图片20211005140406.png" class="ats"  alt=""/>
+						<div class="about" style="margin-top:20px;">
+							<p align="center">快来找我玩！！！</p>
+						</div>
+					</div>
+				</section>	
+		</div>
+	<script type="text/javascript" src="https://cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
+	<script type="text/javascript">
+			var message_Path = '/Live2d/'
+			var home_Path = 'http://127.0.0.1:5555/'
+	</script>
+	<script type="text/javascript">
+        if (screen && screen.width > 860) {
+            document.write('<script type="text/javascript" src="/live2d/js/live2d.js"><\/script>');
+            document.write('<script type="text/javascript" src="/live2d/js/message.js"><\/script>');
+            document.write('<script type="text/javascript" src="/live2d/js/run_field.js"><\/script>');
+        }
+    </script>
+	<script type="text/javascript" src="/Live2d/js/live2d.js"></script>
+	<script type="text/javascript" src="/Live2d/js/message.js"></script>
+	<script type="text/javascript"> loadlive2d("live2d", "/Live2d/model/tia/model.json");
+	</script>
+	<script src="js/Mouse.js"></script>
+	<script src="js/index.js"></script>
+	<script src="js/Sitetime.js"></script>
+	</body>
+</html>
