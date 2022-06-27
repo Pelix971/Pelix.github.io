@@ -9,15 +9,9 @@
 		<link rel="icon" type="image/ico" href="img/QQ图片20211005140406.png">
         <link rel="stylesheet" href="CSS/style.css">
         <link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css">
-		<link rel="stylesheet" href="Live2d/CSS/live2d.css" />
 	</head>
 	<body>
 		<div id="web_bg" style="background-image: url(./img/Pixiv/94219701_p0_master1200.jpg);"></div>
-		<div id="landlord">
-			<div class="message" style="opacity:0"></div>
-			<canvas id="live2d" width="280" height="250" class="live2d"></canvas>
-			<div class="hide-button">隐藏</div>
-		</div>
 		<div class="container">
 			<div class="hander">
 				<nav id="nav-menu">
@@ -56,21 +50,10 @@
 					</div>
 				</section>	
 		</div>
-	<script type="text/javascript" src="https://cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
-	<script type="text/javascript">
-			var message_Path = '/Live2d/'
-			var home_Path = 'https://pelix971.github.io/Pelix.github.io/'
-	</script>
-	<script type="text/javascript">
-        if (screen && screen.width > 860) {
-            document.write('<script type="text/javascript" src="/live2d/js/live2d.js"><\/script>');
-            document.write('<script type="text/javascript" src="/live2d/js/message.js"><\/script>');
-            document.write('<script type="text/javascript" src="/live2d/js/run_field.js"><\/script>');
-        }
-    </script>
-	<script type="text/javascript" src="/Live2d/js/live2d.js"></script>
-	<script type="text/javascript" src="/Live2d/js/message.js"></script>
-	<script type="text/javascript"> loadlive2d("live2d", "/live2d/model/tia/model.json");
+		<div id="live2d-widget">
+        <script src="https://cdn.jsdelivr.net/gh/chenjun-1201/live2d-widget@latest/autoload.js"></script>
+ 
+        </div>
 	</script>
 	<script src="js/Mouse.js"></script>
 	<script src="js/index.js"></script>
